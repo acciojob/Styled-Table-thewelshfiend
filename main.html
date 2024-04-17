@@ -1,15 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+        th,
+        td {
+            width: 100px;
+            padding: 10px 12px;
+        }
+        th[scope="row"] {
+            width: 200px
+        }
+        thead tr th {
+            background-color: #356691;
+            color: white;
+            font-size: small;
+        }
+        td {
+            font-size: large;
+        }
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        #tl {
+            border-radius: 10px 0px 0px 0px;
+        }
+        #tr {
+            border-radius: 0px 10px 0px 0px;
+        }
+        #br {
+            border-radius: 0px 0px 10px 0px;
+        }
+        #bl {
+            border-radius: 0px 0px 0px 10px;
+        }
+    </style>
 </head>
+
 <body>
     <!-- add table here -->
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="row" id="tl">NAME</th>
+                    <th>KILLS</th>
+                    <th>SAVED</th>
+                    <th>DEATHS</th>
+                    <th>REVIVES</th>
+                    <th id="tr">WINS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">Punisher</td>
+                    <td>10</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td scope="row">Hit Girl</td>
+                    <td>2</td>
+                    <td>9</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td scope="row">Big Dipper</td>
+                    <td>19</td>
+                    <td>12</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td scope="row" id="bl">Boogeyman</td>
+                    <td>13</td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>7</td>
+                    <td id="br">1</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-        
 </body>
+
 </html>
